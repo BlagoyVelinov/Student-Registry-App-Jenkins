@@ -1,15 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('Build') {
+        stage('NPM install') {
             steps {
-                echo 'Hello World'
+                bat 'npm install'
+            }
+        }
+        stage('Run integration tests') {
+            steps {
+                bat 'npm run test'
             }
         }
     }
-    // post {
-    //     always {
-    // // actions to perform afterthe pipeline runs 
-    //    }
-    // }
 }
