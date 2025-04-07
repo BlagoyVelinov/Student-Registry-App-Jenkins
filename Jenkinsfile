@@ -16,5 +16,12 @@ pipeline {
                 bat 'npm run test'
             }
         }
+        stage('Approval for production Deployment') {
+            steps {
+                script {
+                    input message: 'Proceed with production deployment?' ok: 'Deploy'
+                }
+            }
+        }
     }
 }
