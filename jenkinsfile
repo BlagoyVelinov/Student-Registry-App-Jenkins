@@ -9,7 +9,7 @@ pipeline {
     }
     // post {
     //     always {
-    // // actions to perform afterthe pipeline runs
+    // // actions to perform afterthe pipeline runs new test
     //    }
     // }
 }
