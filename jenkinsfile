@@ -1,0 +1,15 @@
+pipeline {
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+    // Commands to build
+            }
+        }
+    }
+    // post {
+    //     always {
+    // // actions to perform afterthe pipeline runs
+    //    }
+    // }
+}
